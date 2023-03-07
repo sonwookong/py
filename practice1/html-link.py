@@ -9,7 +9,8 @@ ht = """<html>
 for i in range(1,11):
     ht += "<tr>\n"
     for j in range(1,11):
-        ht += "<td>"+str(i*j)+"</td>\n"
+        im = str(i*j)
+        ht += "<td><a href=http://"+im+".ru>"+im+"</a></td>\n"
         j += 1
     ht += "</tr>\n"
     i += 1
